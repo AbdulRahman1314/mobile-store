@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Mobile Zone</title>
+<meta name="description" content="Photos of our store, stock and repair work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="dot"></span> Mobile Zone</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services &amp; Prices</a></li>
+      <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="nav-cta" href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp Us</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main class="container section">
+  <div class="section-head">
+    <h1>Gallery</h1>
+    <div class="gold-rule"></div>
+    <p>A look at our store, stock and the kind of repair work we do.</p>
+  </div>
+
+  <!--
+    HOW TO ADD YOUR OWN PHOTOS:
+    1. Put your image files in an "images" folder next to this file (e.g. images/shop-front.jpg).
+    2. Replace a placeholder <div class="gallery-tile">...</div> block below with:
+       <div class="gallery-tile"><img src="images/shop-front.jpg" alt="Mobile Zone shop front"></div>
+    3. Repeat for each photo. Keep image files under ~500KB each so the site loads fast.
+  -->
+  <div class="gallery-grid">
+    <div class="gallery-tile">Shop Front</div>
+    <div class="gallery-tile">Phone Display</div>
+    <div class="gallery-tile">Accessories Wall</div>
+    <div class="gallery-tile">Repair Counter</div>
+    <div class="gallery-tile">Happy Customer</div>
+    <div class="gallery-tile">New Stock Arrival</div>
+  </div>
+</main>
+
+<a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">☎</a>
+
+<footer class="site-footer container">
+  <span>© 2026 Mobile Zone. All rights reserved.</span>
+  <span><a href="contact.html">Visit us</a> · <a href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp</a></span>
+</footer>
+
+<script>
+  var toggle = document.getElementById('menuToggle');
+  var links = document.getElementById('navLinks');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+  }
+</script>
+</body>
+</html>

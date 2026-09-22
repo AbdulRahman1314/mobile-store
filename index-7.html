@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Zone — Premium Mobile Store &amp; Repair</title>
+<meta name="description" content="Mobile Zone — premium phones, accessories and expert repairs. Visit us or message on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  PLACEHOLDERS TO REPLACE ON EVERY PAGE (search for these):
+  - Mobile Zone            -> your business name
+  - 919876543210           -> your WhatsApp number (country code + number, no + or spaces)
+  - +91 98765 43210        -> your phone number, human-readable
+  - Shop No. 12 ...        -> your address (contact.html)
+-->
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="dot"></span> Mobile Zone</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="services.html">Services &amp; Prices</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="nav-cta" href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp Us</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="hero-eyebrow">Mobile Store · Sales &amp; Repair</div>
+    <div class="gold-rule" style="margin-left:auto;margin-right:auto;"></div>
+    <h1>Premium care for your phone, every visit.</h1>
+    <p class="lead">Mobile Zone brings you the latest smartphones, genuine accessories, and expert repair service — backed by honest pricing and a team that treats your device with care.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/919876543210" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      <a class="btn btn-outline" href="services.html">See Prices</a>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head center">
+      <h2>What we do</h2>
+      <div class="gold-rule" style="margin-left:auto;margin-right:auto;"></div>
+      <p style="margin-left:auto;margin-right:auto;">From a new screen to a new phone, we've got it covered.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="icon">Phones</div>
+        <h3>New Phones</h3>
+        <p>Latest smartphones from all major brands, with billing and warranty.</p>
+      </div>
+      <div class="card">
+        <div class="icon">Repair</div>
+        <h3>Repair &amp; Service</h3>
+        <p>Screen, battery, charging port and software issues fixed with care, most within the day.</p>
+      </div>
+      <div class="card">
+        <div class="icon">Accessories</div>
+        <h3>Accessories</h3>
+        <p>Covers, chargers, earphones and tempered glass — genuine and tested.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-head center">
+      <h2>Why customers choose us</h2>
+      <div class="gold-rule" style="margin-left:auto;margin-right:auto;"></div>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Fair, upfront pricing</h3>
+        <p>No surprise charges. Check our full price list before you visit.</p>
+      </div>
+      <div class="card">
+        <h3>Quick turnaround</h3>
+        <p>Most repairs are done within a few hours, while you wait or run errands.</p>
+      </div>
+      <div class="card">
+        <h3>Easy to reach</h3>
+        <p>Message us on WhatsApp for quick questions or to book a repair slot.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">☎</a>
+
+<footer class="site-footer container">
+  <span>© 2026 Mobile Zone. All rights reserved.</span>
+  <span><a href="contact.html">Visit us</a> · <a href="https://wa.me/919876543210" target="_blank" rel="noopener">WhatsApp</a></span>
+</footer>
+
+<script>
+  var toggle = document.getElementById('menuToggle');
+  var links = document.getElementById('navLinks');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.textContent = isOpen ? '✕' : '☰';
+    });
+  }
+</script>
+</body>
+</html>
